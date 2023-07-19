@@ -11,7 +11,40 @@ title: Aziza Kultaeva
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
   <body>
-    {{ content | safe }}
+    <nav class="navbar navbar-expand-lg" style="background-color: #e0e0bb;">
+      <div class="container-md py-1">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Journalism &amp; Communication</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Professional Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Language Learning</a>
+            </li>
+          </ul>
+        </div>
+        <div class="justify-content-end">
+          <a class="navbar-brand" href="#">
+            <img class="rounded-circle" src="https://github.com/AzizaKultaeva.png" alt="{{ title }}" height="32" />
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid py-0 px-0">
+      {{ content | safe }}
+    </div>
+    <footer class="py-4" style="background-color: #e0e0bb;">
+      <div class="container-md">
+        <h3>Footer</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quod rem et non necessitatibus odit similique consequatur, esse, facilis fugiat est deleniti sed quos recusandae excepturi consequuntur. Voluptas, autem dolores.</p>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
